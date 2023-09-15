@@ -47,7 +47,7 @@
 
     <script>
 
-      // Your JavaScript goes here
+      // Declared constantes and Variables
       let randomNumber = Math.floor(Math.random() * 100) + 1;
 
       const guesses = document.querySelector(".guesses");
@@ -60,10 +60,12 @@
       let guessCount = 1;
       let resetButton;
 
+      //added a checkGuess function
       function checkGuess() {
-        alert("I am a placeholder");
-      }
-
-    </script>
+        const userGuess = Number(guessField.value);
+        if (guessCount === 1) {
+          guesses.textContent = "Previous guesses:";
+        }
+  </script>
   </body>
 </html>
